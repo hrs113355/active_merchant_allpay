@@ -40,11 +40,11 @@ module ActiveMerchant #:nodoc:
           mode = ActiveMerchant::Billing::Base.integration_mode
           case mode
             when :production
-              'https://payment.allpay.com.tw/Cashier/AioCheckOut'
+              'https://payment.ecpay.com.tw/Cashier/AioCheckOut'
             when :development
-              'http://payment-stage.allpay.com.tw/Cashier/AioCheckOut'
+              'http://payment-stage.ecpay.com.tw/Cashier/AioCheckOut'
             when :test
-              'http://payment-stage.allpay.com.tw/Cashier/AioCheckOut'
+              'http://payment-stage.ecpay.com.tw/Cashier/AioCheckOut'
             else
               raise StandardError, "Integration mode set to an invalid value: #{mode}"
           end
