@@ -42,9 +42,9 @@ module ActiveMerchant #:nodoc:
             when :production
               'https://payment.ecpay.com.tw/Cashier/AioCheckOut'
             when :development
-              'http://payment-stage.ecpay.com.tw/Cashier/AioCheckOut'
+              'https://payment-stage.ecpay.com.tw/Cashier/AioCheckOut'
             when :test
-              'http://payment-stage.ecpay.com.tw/Cashier/AioCheckOut'
+              'https://payment-stage.ecpay.com.tw/Cashier/AioCheckOut'
             else
               raise StandardError, "Integration mode set to an invalid value: #{mode}"
           end
